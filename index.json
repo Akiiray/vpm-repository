@@ -79,6 +79,21 @@
           },
           "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.2.2/com.akiiray.vrc-avatar-toolkit-plus-v0.2.2.zip",
           "zipSHA256": "22f9805721020bd916e5c3385b42ad046576cd9f13b212a13fdd694bbcfbdaf5"
+        },
+        "0.2.3": {
+          "name": "com.akiiray.vrc-avatar-toolkit-plus",
+          "displayName": "VRC Avatar Toolkit Plus",
+          "version": "0.2.3",
+          "unity": "2022.3",
+          "description": "VRChat avatar setup, maintenance, and debug tools.",
+          "author": {
+            "name": "akiiray"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.0"
+          },
+          "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.2.3/com.akiiray.vrc-avatar-toolkit-plus-v0.2.3.zip",
+          "zipSHA256": "e772e28e8c260c6bd925432bd66edbe7f9fcc3debe1ad5a65d7aba6cf154c555"
         }
       }
     }
