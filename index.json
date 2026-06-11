@@ -16,7 +16,7 @@
             "name": "akiiray"
           },
           "vpmDependencies": {
-            "com.vrchat.avatars": "3.7.0"
+            "com.vrchat.avatars": ">=3.7.0"
           },
           "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.1.0/com.akiiray.vrc-avatar-toolkit-plus.zip"
         }
