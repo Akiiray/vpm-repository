@@ -1,61 +1,64 @@
-name: Build VPM Listing
+name: Build Repo Listing
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+    paths:
+      - source.json
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  listPublishDirectory: Website
+  pathToCi: ci
+
 jobs:
-  build:
+  build-listing:
+    name: build-listing
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Create index.json
-        run: |
-          cat > index.json <<'EOF'
-          {
-            "name": "Akiiray VPM Repository",
-            "id": "com.akiiray.vpm",
-            "url": "https://akiiray.github.io/vpm-repository/index.json",
-            "author": {
-              "name": "akiiray"
-            },
-            "packages": {
-              "com.akiiray.vrc-avatar-toolkit-plus": {
-                "versions": {
-                  "0.1.0": {
-                    "name": "com.akiiray.vrc-avatar-toolkit-plus",
-                    "displayName": "VRC Avatar Toolkit Plus",
-                    "version": "0.1.0",
-                    "unity": "2022.3",
-                    "description": "VRChat avatar setup, maintenance, and debug tools.",
-                    "author": {
-                      "name": "akiiray"
-                    },
-                    "vpmDependencies": {
-                      "com.vrchat.avatars": "3.7.0"
-                    },
-                    "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.1.0/com.akiiray.vrc-avatar-toolkit-plus.zip"
-                  }
-                }
-              }
-            }
-          }
-          EOF
+      - uses: actions/checkout@v4
+        with:
+          repository: vrchat-community/package-list-action
+          path: ${{ env.pathToCi }}
+          clean: false
 
-      - name: Commit index.json
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add index.json
-          git commit -m "Update VPM index" || echo "No changes to commit"
-          git push
+      - name: Restore Cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ env.pathToCi }}/.nuke/temp
+            ~/.nuget/packages
+          key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
+
+      - name: Build Package Version Listing
+        run: ${{ env.pathToCi }}/build.cmd BuildMultiPackageListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE/${{ env.listPublishDirectory }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ env.listPublishDirectory }}
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
