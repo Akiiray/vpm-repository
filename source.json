@@ -2,9 +2,7 @@
   "name": "Akiiray VPM Repository",
   "id": "com.akiiray.vpm",
   "url": "https://akiiray.github.io/vpm-repository/index.json",
-  "author": {
-    "name": "akiiray"
-  },
+  "author": "akiiray",
   "githubRepos": [
     "Akiiray/vrc-avatar-toolkit-plus"
   ],
