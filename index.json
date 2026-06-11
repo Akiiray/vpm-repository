@@ -32,7 +32,8 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0"
           },
-          "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.1.1/com.akiiray.vrc-avatar-toolkit-plus-v0.1.1.zip"
+          "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.1.1/com.akiiray.vrc-avatar-toolkit-plus-v0.1.1.zip",
+          "zipSHA256": "edf1e43e23bbe0c2e0394fc90132f80641ff704be2e908544ba5201c3670c7db"
         }
       }
     }
