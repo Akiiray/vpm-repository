@@ -1,13 +1,11 @@
 # VRC Avatar Toolkit Plus
 
-VRChat avatar setup, maintenance and debug tools.
+## VCC / ALCOM への追加
 
-## Add Repository (VCC / ALCOM)
+以下をクリックするとリポジトリを追加できます。
 
-Click the link below to add this repository to VCC or ALCOM.
+https://akiiray.github.io/vpm-repository/addrepos.html
 
-vcc://vpm/addRepo?url=https://akiiray.github.io/vpm-repository/index.json
-
-If the link does not open automatically, manually add the following repository URL:
+手動追加用 URL:
 
 https://akiiray.github.io/vpm-repository/index.json
