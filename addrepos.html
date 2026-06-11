@@ -1,8 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>Add VRC Avatar Toolkit Plus Repository</title>
+  <meta charset="utf-8">
+  <title>Add VRC Avatar Toolkit Plus Repository</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 10px;
+      background: #2f81f7;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .button:hover {
+      background: #1f6feb;
+    }
+
+    code {
+      display: block;
+      padding: 12px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+    }
+  </style>
 </head>
 <body>
 
@@ -11,16 +43,14 @@
 <p>VCC または ALCOM にリポジトリを追加します。</p>
 
 <p>
-<a href="vcc://vpm/addRepo?url=https://akiiray.github.io/vpm-repository/index.json">
-VCC / ALCOM に追加
-</a>
+  <a class="button" href="vcc://vpm/addRepo?url=https://akiiray.github.io/vpm-repository/index.json">
+    VCC / ALCOM に追加
+  </a>
 </p>
 
 <p>自動で起動しない場合は、以下の URL を手動で追加してください。</p>
 
-<pre>
-https://akiiray.github.io/vpm-repository/index.json
-</pre>
+<code>https://akiiray.github.io/vpm-repository/index.json</code>
 
 </body>
 </html>
