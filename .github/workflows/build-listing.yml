@@ -1,0 +1,61 @@
+name: Build VPM Listing
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create index.json
+        run: |
+          cat > index.json <<'EOF'
+          {
+            "name": "Akiiray VPM Repository",
+            "id": "com.akiiray.vpm",
+            "url": "https://akiiray.github.io/vpm-repository/index.json",
+            "author": {
+              "name": "akiiray"
+            },
+            "packages": {
+              "com.akiiray.vrc-avatar-toolkit-plus": {
+                "versions": {
+                  "0.1.0": {
+                    "name": "com.akiiray.vrc-avatar-toolkit-plus",
+                    "displayName": "VRC Avatar Toolkit Plus",
+                    "version": "0.1.0",
+                    "unity": "2022.3",
+                    "description": "VRChat avatar setup, maintenance, and debug tools.",
+                    "author": {
+                      "name": "akiiray"
+                    },
+                    "vpmDependencies": {
+                      "com.vrchat.avatars": "3.7.0"
+                    },
+                    "url": "https://github.com/Akiiray/vrc-avatar-toolkit-plus/releases/download/v0.1.0/com.akiiray.vrc-avatar-toolkit-plus.zip"
+                  }
+                }
+              }
+            }
+          }
+          EOF
+
+      - name: Commit index.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add index.json
+          git commit -m "Update VPM index" || echo "No changes to commit"
+          git push
