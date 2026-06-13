@@ -69,15 +69,18 @@ VRChat Dynamics 関連コンポーネントの重複検出・整理をサポー�
 ## 前提ツール・対応パッケージ
 
 本ツールの一部機能は、以下の外部ツールやパッケージと連携します。
+Booth ページから各ツールを入手し、必要に応じて Unity プロジェクトへ導入してください。
 
-* Avatar Optimizer (AAO)
-* Avatar Compressor (LAC)
-* Modular Avatar
-* RBS Sleep System Ver.2
-* 赤夜式 撫で音ギミック
-* LightLimitChanger
-* 可愛いポーズ
+| 略称 / 表示名 | 正式名称 | 作者 | 概要 | Booth |
+| --- | --- | --- | --- | --- |
+| AAO | AAO: Avatar Optimizer | anatawa12 | 非破壊でアバターを軽量化するツール群です。Play モード開始時またはアバタービルド時に適用され、Modular Avatar と併用できます。 | [Booth](https://booth.pm/ja/items/4885109) |
+| LAC | LAC: Avatar Compressor (Beta) | Lydia | 軽量な VRChat アバターを作成するための NDMF ユーティリティです。アバターのアセットを解析し、ビルド時に複雑さに応じた圧縮を非破壊で適用します。 | [Booth](https://booth.pm/ja/items/7856254) |
+| RBS Sleep System Ver.2 | RBS SuiminSystem 2 | らずべりー工房 | 自動寝返りや OVR での高さ調整に対応した睡眠システムです。FootAnchor なしでも寝返りに対応しています。 | [Booth](https://booth.pm/ja/items/5933400) |
+| 可愛いポーズ | 可愛いポーズツール ～3点でもVRChatで可愛い！～ | ゆにさきスタジオ | 3点トラッキングやデスクトップでも、座り・寝姿勢などを固定して写真撮影や VR 睡眠に使えるポーズツールです。Modular Avatar 対応 Prefab で導入できます。 | [Booth](https://booth.pm/ja/items/5479202) |
+| 赤夜式 撫で音ギミック | 〖赤夜式〗撫で音ギミック〖VRCアバターギミック〗 | RED NIGHT WORKS VRC #RedNightWorks | 撫でる / 撫でられるの両方に対応した撫で音ギミックです。複数の撫で音を選択でき、任意の撫で音追加にも対応しています。 | [Booth](https://booth.pm/ja/items/6174567) |
+| LightLimitChanger | Light Limit Changer For MA v2 | もち屋の実家 | VRChat 内でアバターの明るさなどを変更できるメニューを生成する、Modular Avatar 前提の非破壊ライティング調節ツールです。 | [Booth](https://booth.pm/ja/items/4864776) |
 
+上記の一部ツールは、前提パッケージとして Modular Avatar を必要とします。
 これらのパッケージがインストールされている場合、導入支援や状態確認などの機能を利用できます。
 
 詳細な使い方や各機能の説明については、本パッケージ内のドキュメントおよびプロジェクト README を参照してください。
