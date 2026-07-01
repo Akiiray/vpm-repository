@@ -288,8 +288,16 @@
           "author": {
             "name": "akiiray"
           },
-          "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/archive/refs/heads/main.zip",
-          "license": "MIT"
+          "keywords": [
+            "vrchat",
+            "avatar",
+            "optimization",
+            "mobile",
+            "vpm"
+          ],
+          "license": "MIT",
+          "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.1.0/com.akiiray.vrc-avatar-litekit-plus-v0.1.0.zip",
+          "zipSHA256": "ffd44720f96eace90510e2f57cdf7527d0bc4d8ebec84e0d0b1783ff5fd3a5bc"
         }
       }
     }
