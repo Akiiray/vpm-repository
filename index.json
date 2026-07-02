@@ -318,6 +318,26 @@
           "license": "MIT",
           "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.1.1/com.akiiray.vrc-avatar-litekit-plus-v0.1.1.zip",
           "zipSHA256": "e0ea1b58de970b7dac70e7a29125fd2cfaecfc3d7448f4a08ddea291d133bace"
+        },
+        "0.1.2": {
+          "name": "com.akiiray.vrc-avatar-litekit-plus",
+          "displayName": "VRC Avatar LiteKit Plus",
+          "version": "0.1.2",
+          "unity": "2022.3",
+          "description": "VRChat avatar optimization and mobile conversion toolkit.",
+          "author": {
+            "name": "akiiray"
+          },
+          "keywords": [
+            "vrchat",
+            "avatar",
+            "optimization",
+            "mobile",
+            "vpm"
+          ],
+          "license": "MIT",
+          "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.1.2/com.akiiray.vrc-avatar-litekit-plus-v0.1.2.zip",
+          "zipSHA256": "238c97b96f28bd0513261b8562c6daed8d5f76c1922579687d89cdb5835233b7"
         }
       }
     }
