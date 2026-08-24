@@ -368,6 +368,30 @@
           "license": "MIT",
           "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.1.2/com.akiiray.vrc-avatar-litekit-plus-v0.1.2.zip",
           "zipSHA256": "238c97b96f28bd0513261b8562c6daed8d5f76c1922579687d89cdb5835233b7"
+        },
+        "0.2.0": {
+          "name": "com.akiiray.vrc-avatar-litekit-plus",
+          "displayName": "VRC Avatar LiteKit Plus",
+          "version": "0.2.0",
+          "unity": "2022.3",
+          "description": "VRChat avatar diagnostics, parameter compression, and mobile conversion toolkit.",
+          "dependencies": {
+            "com.vrchat.avatars": "3.7.0",
+            "nadena.dev.ndmf": "1.5.0"
+          },
+          "author": {
+            "name": "akiiray"
+          },
+          "keywords": [
+            "vrchat",
+            "avatar",
+            "optimization",
+            "mobile",
+            "vpm"
+          ],
+          "license": "MIT",
+          "url": "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.2.0/com.akiiray.vrc-avatar-litekit-plus-v0.2.0.zip",
+          "zipSHA256": "4d351b7abecf5d8a918c8968d65e1c07b2b7b572d9c05ccd50cc3fb69f2d9a95"
         }
       }
     }
