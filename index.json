@@ -479,7 +479,31 @@
                                                                                                                               },
                                                                                                           "url":  "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.3.0-preview.3/com.akiiray.vrc-avatar-litekit-plus-v0.3.0-preview.3.zip",
                                                                                                           "zipSHA256":  "a9d0464164020895319864bf237df2f86c97eafb7ac76c338227fe2cf70b9fd7"
-                                                                                                      }
+                                                                                                      },
+                                                                                  "0.3.0":  {
+                                                                                                "name":  "com.akiiray.vrc-avatar-litekit-plus",
+                                                                                                "displayName":  "VRC Avatar LiteKit Plus",
+                                                                                                "version":  "0.3.0",
+                                                                                                "unity":  "2022.3",
+                                                                                                "description":  "VRChat avatar diagnostics, parameter compression, and mobile conversion toolkit.",
+                                                                                                "author":  {
+                                                                                                               "name":  "akiiray"
+                                                                                                           },
+                                                                                                "keywords":  [
+                                                                                                                 "vrchat",
+                                                                                                                 "avatar",
+                                                                                                                 "optimization",
+                                                                                                                 "mobile",
+                                                                                                                 "vpm"
+                                                                                                             ],
+                                                                                                "license":  "MIT",
+                                                                                                "vpmDependencies":  {
+                                                                                                                        "com.vrchat.avatars":  "\u003e=3.7.0",
+                                                                                                                        "nadena.dev.ndmf":  "\u003e=1.6.0"
+                                                                                                                    },
+                                                                                                "url":  "https://github.com/Akiiray/vrc-avatar-litekit-plus/releases/download/v0.3.0/com.akiiray.vrc-avatar-litekit-plus-v0.3.0.zip",
+                                                                                                "zipSHA256":  "f96ad1542a8e2de56fd42c142fa8b42d87614bad780a152fea9c06957b257d41"
+                                                                                            }
                                                                               }
                                                              }
                  }
